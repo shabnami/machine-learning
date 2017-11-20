@@ -18695,6 +18695,10 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <span class="sd">&#39;&#39;&#39;</span>
 <span class="c1"># TODO: Calculate accuracy, precision and recall</span>
 <span class="c1">#accuracy = len(y_train[income ==1 ] )/ len(y_train)</span>
+<span class="n">TP</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">income</span><span class="p">)</span>
+<span class="n">FP</span> <span class="o">=</span> <span class="n">income</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="n">TN</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">FN</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">accuracy</span> <span class="o">=</span> <span class="p">(</span><span class="n">y_train</span><span class="p">[</span><span class="n">income</span> <span class="o">==</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span> <span class="p">(</span><span class="n">y_train</span><span class="p">)</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">recall</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">precision</span> <span class="o">=</span> <span class="n">accuracy</span> 
@@ -18793,7 +18797,14 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <pre><code>-Random forest is an Ensemble method which can be used in many applications. One example I saw was predicting crime in San Francisco using random forest
 -Sterngth: Easy to implement and fast to compute.
 -Weakness: Random forests are considered black boxes since there are no explicit guideline in prediction so in specific fields they ar enot recommended (for example medical fields)
-- Ensemble methods usually give better prediction and since I already used decision tree , random forest seems to be the best to use to complement that.</code></pre>
+- Ensemble methods usually give better prediction and since I already used decision tree , random forest seems to be the best to use to complement that.
+
+</code></pre>
+<p>Refrences:
+   <a href="http://www.cbcb.umd.edu/~salzberg/docs/murthy_thesis/survey/node32.html">http://www.cbcb.umd.edu/~salzberg/docs/murthy_thesis/survey/node32.html</a></p>
+<p><a href="https://www.quora.com/What-are-industry-applications-of-the-K-nearest-neighbor-algorithm">https://www.quora.com/What-are-industry-applications-of-the-K-nearest-neighbor-algorithm</a></p>
+<p><a href="https://algobeans.com/2016/08/25/random-forest-tutorial/">https://algobeans.com/2016/08/25/random-forest-tutorial/</a></p>
+<p><a href="http://onlinelibrary.wiley.com/doi/10.1002/widm.1114/abstract">http://onlinelibrary.wiley.com/doi/10.1002/widm.1114/abstract</a></p>
 
 </div>
 </div>
@@ -20299,6 +20310,7 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <p>GradientBoosting classifier Ensemble Method is a types of Tree model.
  A tree model is like a 20 questions guessing game. As part of the strategy of this game the first few questions are more broad and should be narrowing down the answer a lot.This is only one predictor . Inorder to get the best answer always if there are a group of people they are able to get better answers(wisdom of the crowd). The method here is like wisdom of the crowd and it gives better prediction .Gradient boosting will typically not use the full grown tree. Instead it is very shallow decision tree. Also in this type of classifications if the points are not classified correctly they will het higher importance so next run they will be classified correctly more likely.</p>
 <p><a href="http://blog.echen.me/2011/03/14/laymans-introduction-to-random-forests/">http://blog.echen.me/2011/03/14/laymans-introduction-to-random-forests/</a></p>
+<p><a href="https://machinelearningmastery.com/gentle-introduction-gradient-boosting-algorithm-machine-learning/">https://machinelearningmastery.com/gentle-introduction-gradient-boosting-algorithm-machine-learning/</a></p>
 
 </div>
 </div>
