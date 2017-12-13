@@ -11809,7 +11809,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11866,7 +11866,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display a description of the dataset</span>
@@ -12008,7 +12008,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -12135,9 +12135,9 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>First one: Probably a restaurant since it has mostly food .</p>
-<p>Second one: Probably a small restaurant/coffee shop since it has fresh products ,milk,grocery and frozen. Not much on detergents and paper.</p>
-<p>Third one: It is probably a supermarket that has lots of all different products from fresh products to detergents.</p>
+<p>First one: Probably a restaurant since it has mostly food. When comparing the data here with the average we see the fresh products are more than average and the rest are about the average. SO that is a good indicator that this place is a resturant that serves fresh food.</p>
+<p>Second one: Probably a small restaurant/coffee shop since it has fresh products ,milk,grocery and frozen. Not much on detergents and paper. All the numbers here are less than average and detergent and delicatessen are much less than average so probably a smaller shop. Still the fresh products are more compared to the rest of the items which makes me think it is small coffee shop or small restaurant.</p>
+<p>Third one: It is probably a supermarket that has lots of all different products from fresh products to detergents. The data here are all above the average and a wide variety of all the products from fresh to detergent. this is probably a supermarket.</p>
 
 </div>
 </div>
@@ -12164,7 +12164,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Make a copy of the DataFrame, using the &#39;drop&#39; function to drop the given feature</span>
@@ -12205,6 +12205,16 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>score: -0.252469807688
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/Users/shabnam/anaconda3/lib/python3.6/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  &#34;This module will be removed in 0.20.&#34;, DeprecationWarning)
 </pre>
 </div>
 </div>
@@ -12258,7 +12268,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
@@ -14070,7 +14080,7 @@ DMMwDMMwjCny/wF2eAYjCf/r7QAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span><span class="p">;</span> <span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">()</span>
@@ -14086,12 +14096,12 @@ DMMwDMMwjCny/wF2eAYjCf/r7QAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[38]:</div>
+<div class="prompt output_prompt">Out[9]:</div>
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x121322b38&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1187eee80&gt;</pre>
 </div>
 
 </div>
@@ -14593,7 +14603,7 @@ yyV+AAAAAElFTkSuQmCC
 <p>The next highest correlation is between Milk and Grocery with .73</p>
 <p>After that is Detergent_paper and MIlk with .66</p>
 <p>In the previouse question we saw that Detergent_papers had high R^2 score and we could predict it from other features. By looking at this heatmap we can confirm that Detergent_paper has correlation to Milk and Grocery so it can be predicted by other features.</p>
-<p>It seems the distribution of the data is mostly on the origin.</p>
+<p>The data is not in normal distributed . It seems the distribution of the data is mostly on the origin. The skewness of data is mostly on the left(positive skew)</p>
 
 </div>
 </div>
@@ -14625,7 +14635,7 @@ yyV+AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
@@ -18770,7 +18780,7 @@ CurkUCgUCoVCoVAolLTi/wGLRBsCSbGBCAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
@@ -18876,7 +18886,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># For each feature find the data points with extreme high or low values</span>
@@ -19703,7 +19713,7 @@ Data points considered outliers for the feature &#39;Delicatessen&#39;:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with the same number of dimensions as features</span>
@@ -20129,7 +20139,11 @@ AACgWP8PSVXvCn5nfSsAAAAASUVORK5CYII=
 <p><strong>Answer:</strong></p>
 <p>first and second pca : .44+.26 = .7</p>
 <p>first four pca = .7+.1+.1=.9</p>
-<p>I am not clear on what is positive and negative!</p>
+<p>A large positive weight (or loading) for a feature indicates a positive correlation between that feature and the principal component.</p>
+<p>A large negative loading indicates a negative correlation between that feature and the principal component.</p>
+<p>A loading close to zero indicates there is no correlation between the feature and the principal component.</p>
+<p>Features with high loadings of the same sign present a positive correlation for the observations with high absolute values of that principal component.</p>
+<p>Features with high loadings of different signs present a negative correlation for the observations with high absolute values of that principal component.</p>
 
 </div>
 </div>
@@ -20146,7 +20160,7 @@ AACgWP8PSVXvCn5nfSsAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display sample log-data after having a PCA transformation applied</span>
@@ -20249,7 +20263,7 @@ AACgWP8PSVXvCn5nfSsAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with only two dimensions</span>
@@ -20276,7 +20290,7 @@ AACgWP8PSVXvCn5nfSsAAAAASUVORK5CYII=
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[51]:</div>
+<div class="prompt output_prompt">Out[15]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -20648,7 +20662,7 @@ AgAAiiWIAACAYgkiAACgWIIIAAAoliACAACKJYgAAIBi/R0VQaLswfS9/AAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display sample log-data after applying PCA transformation in two dimensions</span>
@@ -20730,7 +20744,7 @@ AgAAiiWIAACAYgkiAACgWIIIAAAoliACAACKJYgAAIBi/R0VQaLswfS9/AAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a biplot</span>
@@ -20746,12 +20760,12 @@ AgAAiiWIAACAYgkiAACgWIIIAAAoliACAACKJYgAAIBi/R0VQaLswfS9/AAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[52]:</div>
+<div class="prompt output_prompt">Out[17]:</div>
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11e46ddd8&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1196c9550&gt;</pre>
 </div>
 
 </div>
@@ -21924,7 +21938,7 @@ Choose a data point. At a given point in the algorithm, we are certain that a po
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.mixture</span> <span class="k">import</span> <span class="n">GaussianMixture</span>
@@ -22008,7 +22022,7 @@ k=4 score= 0.3290804667</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display the results of the clustering from implementation</span>
@@ -22736,7 +22750,7 @@ RERERERkWQx4iIiIiIjIshjwEBERERGRZf3/+t1I/NhLQX8AAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Inverse transform the centers</span>
@@ -22862,7 +22876,7 @@ RERERERkWQx4iIiIiIjIshjwEBERERGRZf3/+t1I/NhLQX8AAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display the predictions</span>
@@ -22902,6 +22916,7 @@ Sample point 2 predicted to be in Cluster 1
 <p>Sample point 0 predicted to be in Cluster 0</p>
 <p>Sample point 1 predicted to be in Cluster 0</p>
 <p>Sample point 2 predicted to be in Cluster 1</p>
+<p>The answeres from this observation is same as what I originally predicted based on just looking at the data and comparing it to the average.</p>
 
 </div>
 </div>
@@ -22989,7 +23004,7 @@ Sample point 2 predicted to be in Cluster 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display the clustering results based on &#39;Channel&#39; data</span>
